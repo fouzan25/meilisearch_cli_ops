@@ -64,7 +64,6 @@ async function addDataToIndexOperation(): Promise<void> {
     const indexName = await askQuestion("Enter index name: ");
     const filePath = await askQuestion("Enter file path: ");
     await processJsonFiles(filePath, indexName);
-    console.log(`Data added to index '${indexName}' from file '${filePath}'.`);
   } catch (error: any) {
     console.error("Error:", error.message);
   }
