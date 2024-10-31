@@ -1,0 +1,28 @@
+{
+  "compilerOptions": {
+    "module": "NodeNext",
+    "outDir": "./built",
+    "allowJs": true,
+    "target": "es6",
+    "moduleResolution": "NodeNext",
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "baseUrl": ".",
+    "paths": {
+      "@app": ["src/app/index"],
+      "@helpers/*": ["src/helpers/*"],
+      "@interfaces": ["src/interfaces/index"],
+      "@constants": ["src/constants/index"],
+      "@indexer": ["src/indexer/index"],
+      "@create_index": ["src/create_index/index"],
+      "@delete_index": ["src/delete_index/index"],
+      "@get_index_data": ["src/get_index_data/index"],
+      "@indexers_status": ["src/indexers_status/index"],
+      "@list_indexers": ["src/list_indexers/index"],
+      "@services": ["src/services/index"]
+    }
+  },
+  "include": ["src/**/*.ts"],
+  "exclude": ["node_modules"]
+}

@@ -1,0 +1,23 @@
+{
+  "name": "meilisearch_cli_ops",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.ts",
+  "license": "MIT",
+  "dependencies": {
+    "@types/dotenv": "^8.2.3",
+    "axios": "^1.7.7",
+    "dotenv": "^16.4.5"
+  },
+  "devDependencies": {
+    "@types/node": "^22.8.4",
+    "ts-node": "^10.9.2",
+    "tsconfig-paths": "^4.2.0",
+    "typescript": "^5.6.3"
+  },
+  "scripts": {
+    "start": "node dist/index.js",
+    "dev": "ts-node -r tsconfig-paths/register src/index.ts",
+    "build": "tsc"
+  }
+}
